@@ -28,8 +28,9 @@ import PIL.Image as Image
 
 
 d = os.path.dirname(__file__)
-# xiaohuangren.jpg
+# 更改目录下Wordcloud生成图片，如：xiaohuangren.jpg
 alice_coloring = np.array(Image.open(os.path.join(d, "xiaohuangren.jpg")))
+# win系统需要更改font路径，如：C:\Windows\Fonts\msyhbd.ttc
 my_wordcloud = WordCloud(background_color="white", max_words=2000, mask=alice_coloring,
                          max_font_size=40, random_state=42,
                          font_path='/Users/sebastian/Library/Fonts/Arial Unicode.ttf')\
