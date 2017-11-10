@@ -1,5 +1,6 @@
 #coding=utf8
 import itchat
+import time
 
 # 自动回复
 # 封装好的装饰器，当接收到的消息是Text，即文字消息
